@@ -9,11 +9,20 @@
 h3 {
   color: grey;
 }
-
+.blinking{
+    animation:blinkingText 1.2s infinite;
+}
+@keyframes blinkingText{
+    0%{     color: blue;    }
+    49%{    color: blue; }
+    60%{    color: transparent; }
+    99%{    color:transparent;  }
+    100%{   color: blue;    }
+}
 </style>
 <body>
 <div class="open-sans-font">
-<center><h3>Corona Forecast Dashboard by Krishna</h3></center></div>
+<center><h3>Corona Forecast Dashboard by Krishna</h3><span class="blinking"> Last Updated: 2020-03-30 14:24</span></center></div>
 <div>
         
                 <script type="text/javascript">window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
